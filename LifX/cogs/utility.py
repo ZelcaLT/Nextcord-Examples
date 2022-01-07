@@ -70,6 +70,9 @@ class Utility(commands.Cog, name="🔌Utility"):
 
         
 
+        
+        
+      
 
     @commands.command()
     async def ping(self, ctx):
@@ -110,7 +113,24 @@ class Utility(commands.Cog, name="🔌Utility"):
 
 
 
+    @commands.command(name="ban", description="Bans a member from the server.")
+    async def ban(self, ctx, member: nextcord.Member=None, *, reason=None):
+        if Reason is None:
+            reason="No reason given"
+        if member is None:
+            await ctx.reply("You need to specify a nemver to ban!"
+            return
+        
+            
 
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
 
 
 def setup(bot):
